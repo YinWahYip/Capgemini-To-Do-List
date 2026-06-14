@@ -8,8 +8,12 @@ public class Task {
     public Task(int id, String description, String category) {
         this.id = id;
         this.description = description;
-        // "General" as default
-        this.category = (category == null || category.trim().isEmpty()) ? "General" : category.trim();
+        // "General" is default if no user input
+        if (category == null || category.trim().isEmpty()) {
+            this.category = "General"; // Default fallback
+        } else {
+            this.category = category.trim(); 
+        }
     }
 
     // Getters
