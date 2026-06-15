@@ -38,6 +38,6 @@ public class Task {
 
     // save tasks
     public String toFileString() {
-        return id + ": " + description + "," + category;
+        return id + ", " + description + "," + category;
     }
 }
