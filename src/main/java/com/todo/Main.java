@@ -62,7 +62,7 @@ public class Main {
                         int id = Integer.parseInt(scan.nextLine());
 
                         if (manager.removeTask(id)) {
-                            System.out.println("🗑️ Task removed.");
+                            System.out.println("Task removed.");
                         } else {
                             System.out.println("Task ID not found.");
                         }
@@ -73,6 +73,10 @@ public class Main {
 
                 // Complete task (like remove), but adds the selected task to separate list
                 case "4":
+                    System.out.println("\n--- Current Active Tasks ---");
+                    for (Task t : manager.getAllTasks()) {
+                        System.out.println(t);
+                    }
                     System.out.print("Enter the ID of the task you finished: ");
                     try {
                         int id = Integer.parseInt(scan.nextLine());
@@ -117,7 +121,7 @@ public class Main {
 
                 // Exit
                 case "7":
-                    System.out.println("Closing...");
+                    System.out.println("Quitting");
                     running = false;
                     break;
 
