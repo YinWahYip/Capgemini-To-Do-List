@@ -1,4 +1,0 @@
-3,    Journal,Work
-4,    Table,Work
-5,    Diploma,Work
-6,    Homework,School
