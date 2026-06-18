@@ -3,6 +3,7 @@ package com.todo;
 import java.util.*;
 
 public class Main {
+    // main staging area to move stuff around, and how the string choices work.
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -17,7 +18,7 @@ public class Main {
             System.out.println("2. Add a Task");
             System.out.println("3. Remove a Task");
             System.out.println("4. Complete a Task");
-            System.out.println("5. View Tasks by Category"); // 💡 New Menu Option
+            System.out.println("5. View Tasks by Category"); 
             System.out.println("6. View Archive (Completed Tasks)");
             System.out.println("7. Exit");
             System.out.print("Enter a number to choose an option: ");
@@ -35,7 +36,7 @@ public class Main {
                             System.out.println(t);
                         }
                     }
-                    break; // 💡 Fixed: Added missing break to stop fall-through execution
+                    break; 
 
                 // Adding task
                 case "2":
